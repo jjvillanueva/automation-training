@@ -1,9 +1,37 @@
 
-# Playwright
+# Dependencies
 node_modules/
+venv/
+__pycache__/
+*.pyc
+.Python
+
+# Playwright
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Reports
+reports/allure-results/
+reports/playwright-report/
+reports/screenshots/
+reports/videos/
+reports/*.html
+reports/*.json
+.pytest_cache/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Claude Code
 .claude/

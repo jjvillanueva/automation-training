@@ -1,15 +1,36 @@
 {
   "name": "automation-training",
   "version": "1.0.0",
-  "description": "",
+  "description": "Comprehensive test automation framework with Playwright (UI) and Pytest (API)",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test:ui": "playwright test",
+    "test:ui:headed": "playwright test --headed",
+    "test:ui:debug": "playwright test --debug",
+    "test:ui:ui-mode": "playwright test --ui",
+    "test:ui:chromium": "playwright test --project=chromium",
+    "test:ui:firefox": "playwright test --project=firefox",
+    "test:ui:webkit": "playwright test --project=webkit",
+    "report:playwright": "playwright show-report reports/playwright-report",
+    "report:allure": "allure serve reports/allure-results",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "keywords": [
+    "playwright",
+    "pytest",
+    "automation",
+    "testing",
+    "e2e",
+    "api-testing",
+    "allure"
+  ],
+  "author": "Juan Villanueva",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.0"
+    "@types/node": "^24.10.0",
+    "allure-playwright": "^3.4.2",
+    "dotenv": "^17.2.3"
   }
 }
