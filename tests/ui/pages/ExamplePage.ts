@@ -13,7 +13,7 @@ export class ExamplePage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.heading = page.locator('h1');
-    this.moreInfoLink = page.getByRole('link', { name: 'More information' });
+    this.moreInfoLink = page.locator('a[href*="iana"]');
   }
 
   /**
